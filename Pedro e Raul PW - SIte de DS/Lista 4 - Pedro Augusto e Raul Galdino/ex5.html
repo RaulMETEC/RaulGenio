@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro e Raul ex5</title>
+</head>
+<body>
+    <h1>Crie uma função que receba um array de 5 números e retorne um novo array contendo apenas os números pares.</h1>
+    <script>
+        let numeros = [];
+        for(let i = 0; i < 5; i++) {
+            let numero = Number(prompt("Digite o número " + (i + 1)));
+            numeros.push(numero);
+        }
+        let pares = numeros.filter(numero => numero % 2 === 0);
+        document.write("Números pares: " + pares);
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex6.html"; 
+     }
+ </script>
+</body>
+</html>
+

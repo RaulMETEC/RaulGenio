@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro e Raul ex13</title>
+</head>
+<body>
+    <h1>Dado um array de 5 números, encontre o maior número e armazene em uma variável chamada maior.</h1>
+    <script>
+        let numeros = [];
+        for(let i = 0; i < 5; i++) {
+            let numero = Number(prompt("Digite o número " + (i + 1)));
+            numeros.push(numero);
+        }
+        let maior = Math.max(...numeros);
+        document.write("O maior número é: " + maior);
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex14.html"; 
+     }
+ </script>
+</body>
+</html>
+

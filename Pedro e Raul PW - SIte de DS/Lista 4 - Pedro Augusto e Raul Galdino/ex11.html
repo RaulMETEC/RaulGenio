@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro e Raul ex11</title>
+</head>
+<body>
+    <h1>Dado um array de 5 números, remova os elementos duplicados sem usar Set.</h1>
+    <script>
+        let numeros = [];
+        for(let i = 0; i < 5; i++) {
+            let numero = Number(prompt("Digite o número " + (i + 1)));
+            numeros.push(numero);
+        }
+        let semDuplicatas = numeros.filter((item, index) => numeros.indexOf(item) === index);
+        document.write("Array sem duplicatas: " + semDuplicatas);
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex12.html"; 
+     }
+ </script>
+</body>
+</html>
+

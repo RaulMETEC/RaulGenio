@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+
+    <h1>4. Receba 5 palavras em um vetor e exiba a quantidade de caracteres do maior elemento:</h1>
+    <script>
+        const palavras2 = [];
+        let maiorPalavra = "";
+
+        for (let i = 0; i < 5; i++) {
+            palavras2[i] = prompt("Digite a palavra " + (i + 1) + ":");
+            if (palavras2[i].length > maiorPalavra.length) {
+                maiorPalavra = palavras2[i];
+            }
+        }
+
+  
+        document.write("Quantidade de caracteres do maior elemento: " + maiorPalavra.length + "<br>");
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex5.html"; 
+     }
+ </script>
+</body>
+</html>

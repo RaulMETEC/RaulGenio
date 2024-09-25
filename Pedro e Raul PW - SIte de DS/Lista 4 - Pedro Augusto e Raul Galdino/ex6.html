@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro e Raul ex6</title>
+</head>
+<body>
+    <h1>Escreva uma função que concatene dois arrays de 5 números e retorne o array resultante.</h1>
+    <script>
+        let array1 = [];
+        let array2 = [];
+        
+        for(let i = 0; i < 5; i++) {
+            let numero1 = Number(prompt("Digite o número " + (i + 1) + " do primeiro array"));
+            array1.push(numero1);
+        }
+        
+        for(let i = 0; i < 5; i++) {
+            let numero2 = Number(prompt("Digite o número " + (i + 1) + " do segundo array"));
+            array2.push(numero2);
+        }
+        
+        let concatenado = array1.concat(array2);
+        document.write("Array concatenado: " + concatenado);
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex7.html"; 
+     }
+ </script>
+</body>
+</html>

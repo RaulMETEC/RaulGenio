@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+
+    <h1>5. Crie 3 vetores com elementos diferentes e concatene-os. Exiba na página o resultado:</h1>
+    <script>
+        const vetor1 = [prompt("Digite um valor para o vetor 1, posição 1:"), 
+                        prompt("Digite um valor para o vetor 1, posição 2:"), 
+                        prompt("Digite um valor para o vetor 1, posição 3:")];
+
+        const vetor2 = [prompt("Digite uma letra para o vetor 2, posição 1:"), 
+                        prompt("Digite uma letra para o vetor 2, posição 2:"), 
+                        prompt("Digite uma letra para o vetor 2, posição 3:")];
+
+        const vetor3 = [prompt("Digite um valor para o vetor 3, posição 1:"), 
+                        prompt("Digite um valor para o vetor 3, posição 2:"), 
+                        prompt("Digite um valor para o vetor 3, posição 3:")];
+
+        const vetorConcatenado = vetor1.concat(vetor2, vetor3);
+
+        document.write("Vetor concatenado: ");
+        for (let i = 0; i < vetorConcatenado.length; i++) {
+            document.write(vetorConcatenado[i] + ", ");
+
+            }
+        
+        document.write("<br>");
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex6.html"; 
+     }
+ </script>
+</body>
+</html>

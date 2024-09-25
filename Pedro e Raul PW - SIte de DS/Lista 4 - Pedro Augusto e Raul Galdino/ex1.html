@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro e Raul ex1</title>
+</head>
+<body>
+    <h1>Escreva uma função que receba um array de 5 números e retorne a soma de todos os elementos.</h1>
+    <script>
+        let numeros = [];
+        for(let i = 0; i < 5; i++) {
+            let numero = Number(prompt("Digite o número " + (i + 1)));
+            numeros.push(numero);
+        }
+        let soma = numeros.reduce((total, numero) => total + numero, 0);
+        document.write("A soma dos números é: " + soma);
+    </script>
+    
+    <br>
+    <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+    <script>
+        function irParaProximoExercicio() {
+           
+            window.location.href = "ex2.html"; 
+        }
+    </script>
+</body>
+</html>

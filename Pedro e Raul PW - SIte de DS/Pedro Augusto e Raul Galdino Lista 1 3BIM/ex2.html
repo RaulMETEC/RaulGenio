@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+
+    <h1>2. Receba 4 palavras em um vetor e exiba em ordem alfabética:</h1>
+    <script>
+        const palavras1 = [];
+
+        for (let i = 0; i < 4; i++) {
+            palavras1[i] = prompt("Digite a palavra " + (i + 1) + ":");
+        }
+
+        palavras1.sort();
+
+        document.write("Palavras em ordem alfabética: ");
+        for (let i = 0; i < palavras1.length; i++) {
+            document.write(palavras1[i]);
+            if (i < palavras1.length - 1) {
+                document.write(", ");
+            }
+        }
+        document.write("<br>");
+    </script>
+
+<br>
+ <button onclick="irParaProximoExercicio()">Próximo Exercício</button>
+
+ <script>
+     function irParaProximoExercicio() {
+        
+         window.location.href = "ex3.html"; 
+     }
+ </script>
+</body>
+</html>
